@@ -74,6 +74,9 @@ list-style: none;}
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--color1);
+    list-style-type: none; margin-left: 0; /* Отступ слева в браузере IE и Opera */
+        padding-left: 0;   
+    
 }
 .main-actions { font-style: normal;
     font-weight: 400;
@@ -89,7 +92,8 @@ list-style: none;}
         text-align: center;
         letter-spacing: 0.02em;
         text-transform: capitalize;
-        color: var(--color1)}
+        color: var(--color1)
+        }
 
     .main-staff {        font-style: normal;
         font-weight: 700;
@@ -117,6 +121,9 @@ list-style: none;}
         letter-spacing: 0.02em;
         color: var(--color2);
         }
+
+        .nomarker {list-style-type: none; margin-left: 0; /* Отступ слева в браузере IE и Opera */
+            padding-left: 0;   }
 
         /* *****footer***** */
 
