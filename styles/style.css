@@ -1,18 +1,22 @@
 :root { --color1: #2E2F42;
 --color2: #434455;
---color3:#4D5AE5;}
+--color3:#4D5AE5;
+--color4: #404BBF;
+--color5: #ffffff;
+--color6:  #F4F4FD;
+--color7: #E7E9FC;}
 
 body {font-family: 'Roboto', sans-serif;
-    text-decoration: none;
-list-style: none;}
+    }
 
 /* *****  header****** */
 .header-navi {
 }
-.header-logo {font-weight: 800;
+.header-logo {font-family: 'Raleway';
+    font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
-    color: #4D5AE5;
+    color: var(--color3);
     letter-spacing: 0.03em;
     text-decoration: none;
 }
@@ -33,10 +37,10 @@ list-style: none;}
     letter-spacing: 0.02em 
     
 }
-.header-link :active {color: #404BBF;}
+.header-link :active {color: var(--color4);}
 
 .header-addr {
-    list-style: none;
+    list-style: none; 
 }
 .header-addr-cont {
 }
@@ -44,27 +48,31 @@ list-style: none;}
     padding-left: 0;   
 }
 .header-link-cont 
-{font-weight: 400;
-    font-size: 16px;
+{    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    font-style: normal;
     color: var(--color2);
     text-decoration: none;
     list-style: none;
 }
-.header-link-cont :active {color: #404BBF;}
-:is(:hover, :focus){color: #404BBF;}
+.header-link-cont :active {color: var(--color4);}
+.header-link-cont :is(:hover, :focus){color: var(--color4);}
 
 /* ****main*** */
+.main-sect-1 {background: #2E2F42;}
+.main-title {font-weight: 700;
+    font-size: 56px;
+    line-height: 60px;
+color: var(--color5)}
 .main-but
-:hover { background: #404BBF; color: #FFFFFF; }
+:hover { background: var(--color4); color: var(--color5); }
 .main-but {font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    background: #4D5AE5;
-    color: #FFFFFF;
+    background: var(--color3);
+    color: var(--color5);
     cursor: pointer;
     }
 .main-skills
@@ -78,14 +86,12 @@ list-style: none;}
         padding-left: 0;   
     
 }
-.main-actions { font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
+.main-actions {     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color2);
     }
-    .main-demonstr {  font-style: normal;
+    .main-demonstr {
         font-weight: 700;
         font-size: 36px;
         line-height: 1.1;
@@ -101,11 +107,11 @@ list-style: none;}
         line-height: 1.1;
         text-align: center;
         letter-spacing: 0.02em;
+        background: var(--color6);
         text-transform: capitalize;
         color: var(--color1);}
 
-    .main-staff-name {   font-style: normal;
-        font-weight: 500;
+    .main-staff-name { font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
         text-align: center;
@@ -113,8 +119,7 @@ list-style: none;}
         color: var(--color1);
         }
 
-    .main-staff-proff {     font-style: normal;
-        font-weight: 400;
+    .main-staff-proff {    
         font-size: 16px;
         line-height: 1.5;
         text-align: center;
@@ -138,27 +143,17 @@ list-style: none;}
         align-items: center;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        color: #4D5AE5;
+        color: var(--color3);
         }
 
-    .footer-logo-half {font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 800;
-        font-size: 18px;
-        line-height: 1.17;
-        display: flex;
-        align-items: center;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: #F4F4FD;}
+    .footer-logo-half {
+        color: var(--color6)}
 
-    .footer-text {font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
+    .footer-text {
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        color: #E7E9FC;
+        color: var(--color7);
         }
 
     /* ********Portfolio*********** */
@@ -167,23 +162,24 @@ list-style: none;}
     .pf-main-but {list-style-type: none; margin-left: 0; /* Отступ слева в браузере IE и Opera */
         padding-left: 0; }
 
-    .pf-main-but :is(:hover, :focus){color: #FFFFFF; background: #404BBF;}
+    .pf-main-but :is(:hover, :focus){color: var(--color5); background: var(--color4);}
     .pf-main-but
-    {font-weight: 500;
+    {ont-family: 'Roboto';
+        font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    color:var(--color3);
+    color: var(--color3);
     }
     .pf-main-but {cursor: pointer;}
     .pf-main-funct {font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
-        color: #2E2F42;
+        color: var(--color1);
          }
-    .pf-main-wherefunct {font-weight: 400;
+    .pf-main-wherefunct {
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        color: #434455;
+        color: var(--color2);
     }
