@@ -12,7 +12,7 @@ body {font-family: 'Roboto', sans-serif;
 /* *****  header****** */
 .header-navi {
 }
-.header-logo {font-family: 'Raleway';
+.header-logo {font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
@@ -60,14 +60,14 @@ body {font-family: 'Roboto', sans-serif;
 .header-link-cont :is(:hover, :focus){color: var(--color4);}
 
 /* ****main*** */
-.main-sect-1 {background: #2E2F42;}
+.main-sect-1 {background: var(--color1);}
 .main-title {font-weight: 700;
     font-size: 56px;
     line-height: 60px;
 color: var(--color5)}
 .main-but
 :hover { background: var(--color4); color: var(--color5); }
-.main-but {font-family: 'Roboto';
+.main-but {font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -134,7 +134,7 @@ color: var(--color5)}
 
     .footer {background: var(--color1);}
 
-    .footer-logo {font-family: 'Raleway';
+    .footer-logo {font-family: 'Raleway', sans-serif;
         font-style: normal;
         font-weight: 800;
         font-size: 18px;
@@ -164,7 +164,7 @@ color: var(--color5)}
 
     .pf-main-but :is(:hover, :focus){color: var(--color5); background: var(--color4);}
     .pf-main-but
-    {ont-family: 'Roboto';
+    {ont-family: 'Roboto', sans-serif;
         font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
