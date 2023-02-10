@@ -149,6 +149,11 @@ color: var(--color5);
     padding-left: 0; 
     text-decoration: none;  
 }
+.not-see {
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
+  }
 
         /* *****footer***** */
 
