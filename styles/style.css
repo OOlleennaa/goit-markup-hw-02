@@ -1,4 +1,5 @@
-:root { --color1: #2E2F42;
+:root {
+--color1: #2E2F42;
 --color2: #434455;
 --color3:#4D5AE5;
 --color4: #404BBF;
@@ -6,13 +7,15 @@
 --color6:  #F4F4FD;
 --color7: #E7E9FC;}
 
-body {font-family: 'Roboto', sans-serif;
+body {
+    font-family: 'Roboto', sans-serif;
     }
 
 /* *****  header****** */
 .header-navi {
 }
-.header-logo {font-family: 'Raleway', sans-serif;
+.header-logo {
+    font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
@@ -20,35 +23,38 @@ body {font-family: 'Roboto', sans-serif;
     letter-spacing: 0.03em;
     text-decoration: none;
 }
-.half-logo {color: var(--color1);}
+.half-logo {
+    color: var(--color1);}
 .header {
 }
-.header-item {list-style-type: none; margin-left: 0; /* Отступ слева в браузере IE и Opera */
+.header-item {
+    list-style-type: none; margin-left: 0; /* Отступ слева в браузере IE и Opera */
     padding-left: 0;   
 }
 
 
-.header-link 
-{font-weight: 500;
+.header-link {
+    font-weight: 500;
     text-decoration: none;
     color: var(--color1);
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em 
+    letter-spacing: 0.02em; 
     
 }
-.header-link :active {color: var(--color4);}
+.header-link  :is(:hover, :focus){color: var(--color4);}
 
 .header-addr {
     list-style: none; 
 }
 .header-addr-cont {
 }
-.header-cont {list-style-type: none; margin-left: 0; /* Отступ слева в браузере IE и Opera */
+.header-cont {
+    list-style-type: none; margin-left: 0; /* Отступ слева в браузере IE и Opera */
     padding-left: 0;   
 }
-.header-link-cont 
-{    font-size: 16px;
+.header-link-cont {    
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     font-style: normal;
@@ -56,18 +62,21 @@ body {font-family: 'Roboto', sans-serif;
     text-decoration: none;
     list-style: none;
 }
-.header-link-cont :active {color: var(--color4);}
-.header-link-cont :is(:hover, :focus){color: var(--color4);}
+.header-link-cont:active {color: var(--color4);}
+.header-link-cont:is(:hover, :focus){color: var(--color4);}
 
 /* ****main*** */
-.main-sect-1 {background: var(--color1);}
-.main-title {font-weight: 700;
+.main-sect-1 {
+    background: var(--color1);}
+.main-title {
+    font-weight: 700;
     font-size: 56px;
     line-height: 60px;
-color: var(--color5)}
-.main-but
-:hover { background: var(--color4); color: var(--color5); }
-.main-but {font-family: 'Roboto', sans-serif;
+color: var(--color5);
+}
+
+.main-but {
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -75,111 +84,133 @@ color: var(--color5)}
     color: var(--color5);
     cursor: pointer;
     }
-.main-skills
-{    font-style: normal;
+    .main-but :hover { 
+        background: var(--color4); color: var(--color5); }
+.main-skills-all {
+    list-style-type: none;    
+}
+.main-skills {    
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--color1);
     list-style-type: none; margin-left: 0; /* Отступ слева в браузере IE и Opera */
-        padding-left: 0;   
+    padding-left: 0;   
     
 }
-.main-actions {     font-size: 16px;
+.main-actions {     
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color2);
     }
-    .main-demonstr {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.1;
-        text-align: center;
-        letter-spacing: 0.02em;
-        text-transform: capitalize;
-        color: var(--color1)
-        }
+.main-demonstr {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--color1);
+    }
+.main-staff-all {
+    background: var(--color6);
+}
+.main-staff {        
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--color1);
+}
 
-    .main-staff {        font-style: normal;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.1;
-        text-align: center;
-        letter-spacing: 0.02em;
-        background: var(--color6);
-        text-transform: capitalize;
-        color: var(--color1);}
+.main-staff-name { 
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--color1);
+    }
 
-    .main-staff-name { font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        text-align: center;
-        letter-spacing: 0.02em;
-        color: var(--color1);
-        }
+.main-staff-proff {    
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--color2);
+    }
 
-    .main-staff-proff {    
-        font-size: 16px;
-        line-height: 1.5;
-        text-align: center;
-        letter-spacing: 0.02em;
-        color: var(--color2);
-        }
-
-        .nomarker {list-style-type: none; margin-left: 0; /* Отступ слева в браузере IE и Opera */
-            padding-left: 0;   }
+.nomarker {
+    list-style-type: none; margin-left: 0; /* Отступ слева в браузере IE и Opera */
+    padding-left: 0; 
+    text-decoration: none;  
+}
 
         /* *****footer***** */
 
-    .footer {background: var(--color1);}
+.footer {
+    background: var(--color1);
+}
 
-    .footer-logo {font-family: 'Raleway', sans-serif;
-        font-style: normal;
-        font-weight: 800;
-        font-size: 18px;
-        line-height: 1.17;
-        display: flex;
-        align-items: center;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: var(--color3);
-        }
+.footer-logo {font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--color3);
+    }
 
-    .footer-logo-half {
-        color: var(--color6)}
+.footer-logo-half {
+    color: var(--color6);}
 
-    .footer-text {
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: var(--color7);
-        }
+.footer-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color7);
+    }
 
     /* ********Portfolio*********** */
 
 
-    .pf-main-but {list-style-type: none; margin-left: 0; /* Отступ слева в браузере IE и Opera */
-        padding-left: 0; }
+.pf-main-but {
+    list-style-type: none; margin-left: 0; /* Отступ слева в браузере IE и Opera */
+    padding-left: 0; 
+}
 
-    .pf-main-but :is(:hover, :focus){color: var(--color5); background: var(--color4);}
-    .pf-main-but
-    {ont-family: 'Roboto', sans-serif;
-        font-weight: 500;
+.pf-main-but :is(:hover, :focus){color: var(--color5); background: var(--color4);}
+.pf-main-but {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     color: var(--color3);
+}
+.pf-main-but {
+    cursor: pointer;
+}
+.pf-main-link {
+    text-decoration: none;
+}
+.pf-main-funct {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--color1);
+    text-decoration: none;
     }
-    .pf-main-but {cursor: pointer;}
-    .pf-main-funct {font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        color: var(--color1);
-         }
-    .pf-main-wherefunct {
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: var(--color2);
+.pf-main-wherefunct {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color2);
+    text-decoration: none;
     }
