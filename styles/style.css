@@ -186,12 +186,13 @@ color: var(--color5);
     }
 
     /* ********Portfolio*********** */
-    .pf-main  :is(:hover, :focus){color: var(--color5); 
-        background: var(--color4); 
-        /* box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-        border-radius: 4px;} */
-    .pf-main {
-        list-style: none;
+/* .pf-main  :is(:hover, :focus){color: var(--color5); 
+    background: var(--color4);  */
+    /* box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;} */ 
+
+.pf-main {
+    list-style-type: none;
     }
     
 .pf-main-but {
@@ -199,10 +200,7 @@ color: var(--color5);
     padding-left: 0; 
 }
 
-.pf-main-but :is(:hover, :focus){color: var(--color5); 
-    background: var(--color4); 
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;}
+
 .pf-main-but {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -210,6 +208,12 @@ color: var(--color5);
     line-height: 1.5;
     color: var(--color3);
 }
+.pf-main-but:is(:hover, :focus){color: var(--color5); 
+    background: var(--color4); 
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
 .pf-main-but {
     cursor: pointer;
 }
